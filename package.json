@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name thread ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name thread ./src/components/index.js && echo 'Now update your package reference to this repo with this hash at the end:' && git rev-parse --short --verify master",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
