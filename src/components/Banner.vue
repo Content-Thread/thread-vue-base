@@ -21,7 +21,7 @@ export default {
     styles: {
       type: Object,
       default: () => ({
-        border: '10px solid blue'
+        border: '10px solid orange'
       })
     }
   },
