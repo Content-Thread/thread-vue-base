@@ -19,7 +19,9 @@ export default {
     },
     styles: {
       type: Object,
-      default: () => ({})
+      default: () => ({
+        border: '10px solid blue'
+      })
     }
   },
   data() {
