@@ -6,7 +6,8 @@
 <script>
 const defaultStyles = {
   left: 0,
-  right: 0
+  right: 0,
+  border: '3px solid green'
 };
 export default {
   props: {
