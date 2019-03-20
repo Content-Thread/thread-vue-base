@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name thread ./src/components/index.js && echo 'Now update your package reference to this repo with this hash at the end:' && git rev-parse --short --verify master",
+    "build-bundle": "vue-cli-service build --target lib --name thread ./src/components/index.js && npm run bundle-next-steps",
+    "bundle-next-steps": "echo '\\033[32mNEXT STEPS\\033[0m' && echo '1. Commit and push your changes to this repo' && echo '2. Run this command to get your latest commit hash: \\033[1;31mgit rev-parse --short --verify HEAD\\033[0m' && echo '3. Update your package reference URL to this repo with the new hash at the end' && echo '4. In your project, get the latest update with \\033[1;31mnpm install thread-vue-base\\033[0m'",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
