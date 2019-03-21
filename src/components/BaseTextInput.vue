@@ -1,5 +1,5 @@
 <template>
-  <label class="base-form__label">
+  <label class="base-form__label base-form__label--text">
     <span class="base-form__label-text">{{labelText}}</span>
     <input 
       class="base-form__input base-form__text-input" 

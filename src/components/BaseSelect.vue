@@ -1,13 +1,15 @@
 <template>
-  <label class="base-form__label base-form__label--email">
+  <label class="base-form__label base-form__label--select">
     <span class="base-form__label-text">{{labelText}}</span>
-    <input 
-      class="base-form__input base-form__email-input" 
-      type="email"
+    <select 
+      class="base-form__input base-form__phone-input" 
+      type="tel"
       :value="value"
       v-on="listeners"
       v-bind="$attrs"
       >
+    <slot><option>No Options</option></slot>  
+    </select>
   </label>
 </template>
 

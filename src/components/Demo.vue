@@ -17,6 +17,10 @@
     <hr>
     <h2>Base Number Input</h2>
     <BaseNumberInput @input="logInput"/>
+    <hr>
+    <h2>Base Select Input</h2>
+    <BaseSelect @input="logInput">
+    </BaseSelect>
   </div>
 </template>
 
