@@ -1,8 +1,10 @@
 import Vue from "vue";
 import Banner from "./Banner.vue";
+import BaseTextInput from "./BaseTextInput.vue";
 
 const Components = {
-  Banner
+  Banner,
+  BaseTextInput
 };
 
 Object.keys(Components).forEach(name => {
