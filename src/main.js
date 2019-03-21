@@ -3,6 +3,9 @@
 import Vue from "vue";
 import App from "./App";
 import "./components";
+import Vuelidate from 'vuelidate'
+
+Vue.use(Vuelidate)
 
 Vue.config.productionTip = false;
 

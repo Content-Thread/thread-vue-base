@@ -10,14 +10,13 @@
 export default {
   inheritAttrs: false,
   props: {
+    value: {
+      type: String,
+      default: () => ""
+    },
     labelText: {
       type: String,
       default: () => "no label provided"
-    }
-  },
-  data() {
-    return {
-      value: ''
     }
   },
   computed: {

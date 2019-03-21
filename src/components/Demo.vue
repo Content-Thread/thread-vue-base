@@ -4,7 +4,9 @@
     <Banner>This is a banner</Banner>
     <hr>
     <h2>Base Text Input</h2>
-    <BaseTextInput @input="logInput"/>
+    <BaseTextInput v-model="textval" @input="logInput" :class="{
+      'has-error': $v.textval.$invalid
+    }"/>
     <hr>
     <h2>Base Checkbox Input</h2>
     <BaseCheckbox @input="logInput"/>
@@ -27,16 +29,32 @@
 </template>
 
 <script>
+import { minLength } from 'vuelidate/lib/validators'
+
 export default {
   name: "Demo",
-  data: () => ({}),
+  data(){
+    return {
+      textval: ''
+    }
+  },
   methods: {
     logInput: function(event) {
       console.log("input!!", event);
+    }
+  },
+  validations: {
+    textval: {
+      minLength: minLength(4)
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
+
+.has-error {
+  outline: 2px solid red;
+}
+
 </style>
