@@ -6,6 +6,7 @@ import BaseEmailInput from "./BaseEmailInput.vue";
 import BaseNumberInput from "./BaseNumberInput.vue";
 import BasePhoneInput from "./BasePhoneInput.vue";
 import BaseSelect from "./BaseSelect.vue";
+import BaseButton from "./BaseButton.vue";
 
 const Components = {
   Banner,
@@ -14,7 +15,8 @@ const Components = {
   BaseEmailInput,
   BaseNumberInput,
   BasePhoneInput,
-  BaseSelect
+  BaseSelect,
+  BaseButton
 };
 
 Object.keys(Components).forEach(name => {

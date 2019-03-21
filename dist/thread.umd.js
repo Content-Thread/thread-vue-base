@@ -507,6 +507,17 @@ module.exports = __webpack_require__("9e1e") ? Object.defineProperties : functio
 
 /***/ }),
 
+/***/ "14d9":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseButton_vue_vue_type_style_index_0_id_5c11b4e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("b374");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseButton_vue_vue_type_style_index_0_id_5c11b4e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseButton_vue_vue_type_style_index_0_id_5c11b4e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BaseButton_vue_vue_type_style_index_0_id_5c11b4e2_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "1691":
 /***/ (function(module, exports) {
 
@@ -1830,6 +1841,13 @@ module.exports = function (bitmap, value) {
 
 /***/ }),
 
+/***/ "b374":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "b447":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3049,7 +3067,78 @@ var BaseSelect_component = normalizeComponent(
 )
 
 /* harmony default export */ var BaseSelect = (BaseSelect_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d1b3d832-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BaseButton.vue?vue&type=template&id=5c11b4e2&scoped=true&
+var BaseButtonvue_type_template_id_5c11b4e2_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('button',[_vm._v("\n  "+_vm._s(_vm.labelText)+"\n")])}
+var BaseButtonvue_type_template_id_5c11b4e2_scoped_true_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/BaseButton.vue?vue&type=template&id=5c11b4e2&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BaseButton.vue?vue&type=script&lang=js&
+
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var BaseButtonvue_type_script_lang_js_ = ({
+  inheritAttrs: false,
+  props: {
+    labelText: {
+      type: String,
+      default: function _default() {
+        return "no label provided";
+      }
+    }
+  },
+  data: function data() {
+    return {
+      value: ''
+    };
+  },
+  computed: {
+    listeners: function listeners() {
+      var _this = this;
+
+      return _objectSpread({}, this.$listeners, {
+        input: function input(event) {
+          return _this.$emit('input', event.target.value);
+        }
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/BaseButton.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_BaseButtonvue_type_script_lang_js_ = (BaseButtonvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./src/components/BaseButton.vue?vue&type=style&index=0&id=5c11b4e2&scoped=true&lang=css&
+var BaseButtonvue_type_style_index_0_id_5c11b4e2_scoped_true_lang_css_ = __webpack_require__("14d9");
+
+// CONCATENATED MODULE: ./src/components/BaseButton.vue
+
+
+
+
+
+
+/* normalize component */
+
+var BaseButton_component = normalizeComponent(
+  components_BaseButtonvue_type_script_lang_js_,
+  BaseButtonvue_type_template_id_5c11b4e2_scoped_true_render,
+  BaseButtonvue_type_template_id_5c11b4e2_scoped_true_staticRenderFns,
+  false,
+  null,
+  "5c11b4e2",
+  null
+  
+)
+
+/* harmony default export */ var BaseButton = (BaseButton_component.exports);
 // CONCATENATED MODULE: ./src/components/index.js
+
 
 
 
@@ -3068,7 +3157,8 @@ var Components = {
   BaseEmailInput: BaseEmailInput,
   BaseNumberInput: BaseNumberInput,
   BasePhoneInput: BasePhoneInput,
-  BaseSelect: BaseSelect
+  BaseSelect: BaseSelect,
+  BaseButton: BaseButton
 };
 
 keys_default()(Components).forEach(function (name) {

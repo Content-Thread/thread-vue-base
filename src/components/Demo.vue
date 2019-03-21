@@ -21,6 +21,8 @@
     <h2>Base Select Input</h2>
     <BaseSelect @input="logInput">
     </BaseSelect>
+    <h2>Base Button</h2>
+    <BaseButton @input="logInput"/>
   </div>
 </template>
 
