@@ -1,10 +1,18 @@
 import Vue from "vue";
 import Banner from "./Banner.vue";
 import BaseTextInput from "./BaseTextInput.vue";
+import BaseCheckbox from "./BaseCheckbox.vue";
+import BaseEmailInput from "./BaseEmailInput.vue";
+import BaseNumberInput from "./BaseNumberInput.vue";
+import BasePhoneInput from "./BasePhoneInput.vue";
 
 const Components = {
   Banner,
-  BaseTextInput
+  BaseTextInput,
+  BaseCheckbox,
+  BaseEmailInput,
+  BaseNumberInput,
+  BasePhoneInput,
 };
 
 Object.keys(Components).forEach(name => {

@@ -4,7 +4,19 @@
     <Banner>This is a banner</Banner>
     <hr>
     <h2>Base Text Input</h2>
-    <BaseTextInput maxlength="12"/>
+    <BaseTextInput @input="logInput"/>
+    <hr>
+    <h2>Base Checkbox Input</h2>
+    <BaseCheckbox @input="logInput"/>
+    <hr>
+    <h2>Base Email Input</h2>
+    <BaseEmailInput @input="logInput"/>
+    <hr>
+    <h2>Base Phone Input</h2>
+    <BasePhoneInput @input="logInput"/>
+    <hr>
+    <h2>Base Number Input</h2>
+    <BaseNumberInput @input="logInput"/>
   </div>
 </template>
 
@@ -12,7 +24,11 @@
 export default {
   name: "Demo",
   data: () => ({}),
-  methods: {}
+  methods: {
+    logInput: function(event) {
+      console.log("input!!", event);
+    }
+  }
 };
 </script>
 
