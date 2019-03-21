@@ -1,6 +1,5 @@
 <template>
   <label class="base-form__label base-form__label--checkbox">
-    <span class="base-form__label-text">{{labelText}}</span>
     <input 
       class="base-form__input base-form__checkbox" 
       type="checkbox"
@@ -8,6 +7,7 @@
       v-on="listeners"
       v-bind="$attrs"
       >
+      <span class="base-form__label-text">{{labelText}}</span>
   </label>
 </template>
 
