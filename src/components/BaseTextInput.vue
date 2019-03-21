@@ -1,5 +1,7 @@
 <template>
-  <label class="base-form__label base-form__label--text">
+  <label class="base-form__label base-form__label--text" :class="{
+    'has-focus': isFocused
+  }">
     <span class="base-form__label-text">{{labelText}}</span>
     <input 
       class="base-form__input base-form__text-input" 
@@ -7,6 +9,8 @@
       :value="value"
       v-on="listeners"
       v-bind="$attrs"
+      @focus="addFocus"
+      @blur="removeFocus"
       >
   </label>
 </template>
@@ -22,6 +26,19 @@ export default {
     labelText: {
       type: String,
       default: () => "no label provided"
+    }
+  },
+  data() {
+    return {
+      isFocused: false
+    }
+  },
+  methods: {
+    addFocus() {
+      this.isFocused = true
+    },
+    removeFocus() {
+      this.isFocused = false
     }
   },
   computed: {
