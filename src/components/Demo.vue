@@ -4,7 +4,7 @@
     <Banner>This is a banner</Banner>
     <hr>
     <h2>Base Text Input</h2>
-    <BaseTextInput/>
+    <BaseTextInput maxlength="12"/>
   </div>
 </template>
 
