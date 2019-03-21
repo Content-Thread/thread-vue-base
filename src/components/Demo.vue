@@ -1,7 +1,10 @@
 <template>
   <div>
-    <h2>Demo of Components</h2>
+    <h1>Demo of Components</h1>
     <Banner>This is a banner</Banner>
+    <hr>
+    <h2>Base Text Input</h2>
+    <BaseTextInput/>
   </div>
 </template>
 
