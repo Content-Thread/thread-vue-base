@@ -2489,14 +2489,63 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Banner = (component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d1b3d832-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BaseTextInput.vue?vue&type=template&id=69e48ece&scoped=true&
+var BaseTextInputvue_type_template_id_69e48ece_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var BaseTextInputvue_type_template_id_69e48ece_scoped_true_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('label',{staticClass:"base-form__label"},[_c('span',{staticClass:"base-form__label-text"}),_c('input',{staticClass:"base-form__input base-form__text-input",attrs:{"type":"text"}})])}]
+
+
+// CONCATENATED MODULE: ./src/components/BaseTextInput.vue?vue&type=template&id=69e48ece&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/BaseTextInput.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var BaseTextInputvue_type_script_lang_js_ = ({
+  props: {
+    labelText: {
+      type: String,
+      default: function _default() {
+        return 'no label';
+      }
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/BaseTextInput.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_BaseTextInputvue_type_script_lang_js_ = (BaseTextInputvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/BaseTextInput.vue
+
+
+
+
+
+/* normalize component */
+
+var BaseTextInput_component = normalizeComponent(
+  components_BaseTextInputvue_type_script_lang_js_,
+  BaseTextInputvue_type_template_id_69e48ece_scoped_true_render,
+  BaseTextInputvue_type_template_id_69e48ece_scoped_true_staticRenderFns,
+  false,
+  null,
+  "69e48ece",
+  null
+  
+)
+
+/* harmony default export */ var BaseTextInput = (BaseTextInput_component.exports);
 // CONCATENATED MODULE: ./src/components/index.js
 
 
 
 
 
+
 var Components = {
-  Banner: Banner
+  Banner: Banner,
+  BaseTextInput: BaseTextInput
 };
 
 keys_default()(Components).forEach(function (name) {
