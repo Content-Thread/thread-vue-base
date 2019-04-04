@@ -3,7 +3,11 @@
 import Vue from "vue";
 import App from "./App";
 import "./components";
-import Vuelidate from 'vuelidate'
+import Vuelidate from 'vuelidate';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+ 
+Vue.use(VueAxios, axios)
 
 Vue.use(Vuelidate)
 

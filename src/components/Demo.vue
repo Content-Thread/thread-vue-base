@@ -23,8 +23,15 @@
     <h2>Base Select Input</h2>
     <BaseSelect @input="logInput">
     </BaseSelect>
-    <h2>Base Button</h2>
-    <BaseButton @input="logInput"/>
+    <hr>
+    <h2>Buttons</h2>
+    <p>Check console to see button output.</p>
+    <h3>Base Button (no type provided, defaults to "submit", apiUrl prop is set)</h3>
+    <BaseButton apiUrl="https://swapi.co/api/people/2" :payload="validations"/>
+    <h3>Base Button (type="button")</h3>
+    <BaseButton type="button"/>
+    <h3>Base Button (type="submit")</h3>
+    <BaseButton type="submit"/>
   </div>
 </template>
 
@@ -35,7 +42,11 @@ export default {
   name: "Demo",
   data(){
     return {
-      textval: ''
+      textval: '',
+      validations:  {
+        someprop: 'hello'
+
+      }
     }
   },
   methods: {
