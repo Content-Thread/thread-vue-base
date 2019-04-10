@@ -1,6 +1,6 @@
 <template>
   <label class="base-form__label base-form__label--email">
-    <span class="base-form__label-text">{{labelText}}</span>
+    <span class="base-form__label-text"><slot>{{labelText}}</slot></span>
     <input 
       class="base-form__input base-form__number-input" 
       type="number"
