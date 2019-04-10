@@ -1,6 +1,6 @@
 <template>
   <label class="base-form__label base-form__label--select">
-    <span class="base-form__label-text"><slot>{{labelText}}</slot></span>
+    <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
     <select 
       class="base-form__input base-form__phone-input" 
       type="tel"
@@ -8,7 +8,7 @@
       v-on="listeners"
       v-bind="$attrs"
       >
-    <slot><option>No Options</option></slot>  
+    <slot name="options"><option>No Options</option></slot>  
     </select>
   </label>
 </template>
