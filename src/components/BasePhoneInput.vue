@@ -1,6 +1,6 @@
 <template>
   <label class="base-form__label  base-form__label--phone">
-    <span class="base-form__label-text"><slot>{{labelText}}</slot></span>
+    <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
     <input 
       class="base-form__input base-form__phone-input" 
       type="tel"

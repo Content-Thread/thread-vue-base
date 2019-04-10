@@ -7,7 +7,7 @@
       v-on="listeners"
       v-bind="$attrs"
       >
-      <span class="base-form__label-text"><slot>{{labelText}}</slot></span>
+      <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
   </label>
 </template>
 
