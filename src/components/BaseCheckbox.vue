@@ -16,7 +16,7 @@ export default {
   inheritAttrs: false,
   props: {
     value: {
-      default: () => false
+      default: () => "false"
     },
     labelText: {
       type: String,
@@ -25,9 +25,9 @@ export default {
   },
   mounted() {
     console.log("BaseCheckbox is here");
-    console.log("checkedValue is " + this.checkedValue + " - will force update");
-    this.$forceUpdate();
-    console.log("checkedValue is " + this.checkedValue + " - did force update");
+    console.log("value is " + this.value);
+    console.log("checkedValue is " + this.checkedValue);
+
   },
   data() {
     return {
@@ -41,6 +41,14 @@ export default {
         input: event => 
           this.$emit('input', event.target.checked.toString())
       }
+    }
+  },
+  watch: {
+    value:  {
+      handler: function (newVal, oldVal) {
+        this.checkedValue = newVal == "false" ? false : true;
+      },
+      immediate: true
     }
   }
 };
