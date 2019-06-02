@@ -4,6 +4,7 @@
       class="base-form__input base-form__checkbox" 
       type="checkbox"
       v-model="value"
+      v-on="listeners"
       v-bind="$attrs"
       >
       <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
@@ -15,8 +16,8 @@ export default {
   inheritAttrs: false,
   props: {
     value: {
-      type: String,
-      default: () => ""
+      type: Boolean,
+      default: () => false
     },
     labelText: {
       type: String,
