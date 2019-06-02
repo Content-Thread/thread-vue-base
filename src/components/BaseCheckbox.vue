@@ -23,6 +23,11 @@ export default {
       default: () => "no label provided"
     }
   },
+  data() {
+    return {
+      checkedValue: this.value == "false" ? false : true
+    }
+  },
   computed: {
     listeners() {
       return {
@@ -30,10 +35,7 @@ export default {
         input: event => 
           this.$emit('input', event.target.checked.toString())
       }
-    },
-    checkedValue() {
-      return this.value == "false" ? false : true
-      }
+    }
   }
 };
 </script>
