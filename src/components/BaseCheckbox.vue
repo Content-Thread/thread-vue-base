@@ -3,8 +3,7 @@
     <input 
       class="base-form__input base-form__checkbox" 
       type="checkbox"
-      :checked="value"
-      v-on="listeners"
+      v-model="value"
       v-bind="$attrs"
       >
       <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
