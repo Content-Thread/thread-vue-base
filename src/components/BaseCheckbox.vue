@@ -3,7 +3,7 @@
     <input 
       class="base-form__input base-form__checkbox" 
       type="checkbox"
-      v-model="value"
+      v-model="checkedValue"
       v-on="listeners"
       v-bind="$attrs"
       >
@@ -16,7 +16,6 @@ export default {
   inheritAttrs: false,
   props: {
     value: {
-      type: Boolean,
       default: () => false
     },
     labelText: {
@@ -31,7 +30,10 @@ export default {
         input: event => 
           this.$emit('input', event.target.checked.toString())
       }
-    }
+    },
+    checkedValue() {
+      return this.value == "false" ? false : true
+      }
   }
 };
 </script>
