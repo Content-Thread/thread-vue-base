@@ -23,6 +23,12 @@ export default {
       default: () => "no label provided"
     }
   },
+  mounted() {
+    console.log("BaseCheckbox is here");
+    console.log("checkedValue is " + this.checkedValue + " - will force update");
+    this.$forceUpdate();
+    console.log("checkedValue is " + this.checkedValue + " - did force update");
+  },
   data() {
     return {
       checkedValue: this.value == "false" ? false : true
