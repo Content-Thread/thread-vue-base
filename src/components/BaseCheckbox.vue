@@ -3,7 +3,7 @@
     <input 
       class="base-form__input base-form__checkbox" 
       type="checkbox"
-      :value="value"
+      :checked="value"
       v-on="listeners"
       v-bind="$attrs"
       >
