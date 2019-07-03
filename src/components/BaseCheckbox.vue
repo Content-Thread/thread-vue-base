@@ -41,6 +41,7 @@ export default {
     value:  {
       handler: function (newVal, oldVal) {
         this.checkedValue = newVal == "false" ? false : true;
+        console.log('val changed');
       },
       immediate: true
     }
