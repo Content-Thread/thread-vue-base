@@ -14,13 +14,13 @@
       <BaseCheckbox @input="logInput"/>
       <hr>
       <h2>Base Email Input</h2>
-      <BaseEmailInput @input="logInput"/>
+      <BaseEmailInput v-model="emailval" @input="logInput"/>
       <hr>
       <h2>Base Phone Input</h2>
-      <BasePhoneInput @input="logInput"/>
+      <BasePhoneInput v-model="phoneval" @input="logInput"/>
       <hr>
       <h2>Base Number Input</h2>
-      <BaseNumberInput @input="logInput"/>
+      <BaseNumberInput v-model="numberval" @input="logInput"/>
       <hr>
       <h2>Base Select Input</h2>
       <BaseSelect @input="logInput">
@@ -40,6 +40,9 @@ export default {
   data(){
     return {
       textval: '',
+      emailval: '',
+      phoneval: '',
+      numberval: '',
       validations:  {
         someprop: 'hello'
 

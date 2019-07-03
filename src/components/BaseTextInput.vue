@@ -1,6 +1,7 @@
 <template>
   <label class="base-form__label base-form__label--text" :class="{
-    'has-focus': isFocused
+    'has-focus': isFocused,
+    'has-content': value.length > 0
   }">
     <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
     <input 
