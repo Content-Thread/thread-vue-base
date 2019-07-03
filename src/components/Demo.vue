@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     logInput: function(value) {
-      console.log("input", value);
+      console.log("input test", value);
     }
   },
   validations: {
