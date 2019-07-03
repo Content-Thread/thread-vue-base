@@ -50,8 +50,8 @@ export default {
     }
   },
   methods: {
-    logInput: function(event) {
-      console.log("input!!", event);
+    logInput: function(value) {
+      console.log("input", value);
     }
   },
   validations: {
