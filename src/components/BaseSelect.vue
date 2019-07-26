@@ -3,7 +3,6 @@
     <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
     <select 
       class="base-form__input base-form__phone-input" 
-      type="tel"
       :value="value"
       v-on="listeners"
       v-bind="$attrs"
