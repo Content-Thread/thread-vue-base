@@ -21,6 +21,7 @@ const Components = {
   BaseForm
 };
 
+// automatically register these components in projects that are using this 
 Object.keys(Components).forEach(name => {
   Vue.component(name, Components[name]);
 });
