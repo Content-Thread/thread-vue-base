@@ -1,6 +1,9 @@
 <template>
 
-<button>
+<button
+  v-bind="$attrs"
+  v-on="listeners"
+  >
   <slot name="label">{{labelText}}</slot>
 </button>
 
