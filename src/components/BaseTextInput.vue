@@ -12,6 +12,7 @@
       v-bind="$attrs"
       @focus="addFocus"
       @blur="removeFocus"
+      :disabled="disabled"
       >
   </label>
 </template>
@@ -27,6 +28,10 @@ export default {
     labelText: {
       type: String,
       default: () => "no label provided"
+    },
+    disabled: {
+      type: Boolean,
+      default: () => false
     }
   },
   data() {
