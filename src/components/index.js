@@ -9,6 +9,7 @@ import BasePhoneInput from "./BasePhoneInput.vue";
 import BaseSelect from "./BaseSelect.vue";
 import BaseButton from "./BaseButton.vue";
 import BaseInUp from "./BaseInUp.vue";
+import BasePassword from "./BasePassword.vue"
 
 const Components = {
   Banner,
@@ -20,7 +21,8 @@ const Components = {
   BaseSelect,
   BaseButton,
   BaseForm,
-  BaseInUp
+  BaseInUp,
+  BasePassword
 };
 
 // automatically register these components in projects that are using this 
