@@ -2,7 +2,7 @@
   <label class="base-form__label base-form__label--select">
     <span class="base-form__label-text"><slot name="label">{{labelText}}</slot></span>
     <select 
-      class="base-form__input base-form__phone-input" 
+      class="base-form__input base-form__select" 
       :value="value"
       v-on="listeners"
       v-bind="$attrs"
